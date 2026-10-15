@@ -49,7 +49,7 @@ Proyecto6_Observability/
 │   └── docs_tool.py        # Búsqueda de documentación
 ├── EjemplosGraficos/       # Capturas del proceso
 ├── requirements.txt
-├── .env                    # Credenciales locales (NO subir)
+├── .env.example            # Plantilla de configuración sin credenciales
 ├── .gitignore              # Archivos excluidos de Git
 └── README.md
 ```
@@ -97,7 +97,7 @@ python -m venv .venv
 pip install -r requirements.txt
 ```
 
-Crear un archivo `.env` con las variables necesarias. **No publicar claves reales.**
+Crear un archivo `.env` a partir de `.env.example` y completar las variables de entorno con las credenciales propias. El archivo `.env` es local y no debe publicarse.
 
 ```dotenv
 OPENAI_API_KEY=tu_clave
@@ -115,7 +115,7 @@ PROMPT_PROVIDER=langsmith
 PROMPT_VERSION=1
 ```
 
-> Los nombres de variables y la URL de Langfuse deben coincidir con la configuración efectiva de `main.py` y de la cuenta utilizada. Si se utiliza otra región de Langfuse, ajustar `LANGFUSE_BASE_URL`.
+> La configuración de Langfuse puede variar según la región de la cuenta. Los prompts versionados deben estar disponibles en el espacio de trabajo configurado para poder recuperarlos.
 
 ## Ejecución
 
@@ -189,24 +189,20 @@ Se implementó un mecanismo de anonimización de direcciones de correo electrón
 
 ## Evidencias gráficas
 
-La carpeta `EjemplosGraficos/` forma parte de la documentación del repositorio: contiene capturas de las configuraciones, las trazas y los resultados. GitHub permite abrirlas desde el enlace a la carpeta sin necesidad de herramientas adicionales.
+El repositorio incluye capturas de la instrumentación, la gestión de prompts y las pruebas de diagnóstico realizadas con LangSmith y Langfuse. Todas están disponibles en la carpeta [EjemplosGraficos](./EjemplosGraficos/).
 
+| Evidencia | Descripción |
+|---|---|
+| [Trazas en LangSmith](./EjemplosGraficos/LangSmith.png) | Seguimiento de las ejecuciones del agente en LangSmith. |
+| [Trazas en Langfuse](./EjemplosGraficos/LangFuse.png) | Visualización de las ejecuciones en Langfuse. |
+| [Gestión de prompts](./EjemplosGraficos/GetionPrompts_LangSmith.png) | Versionado de prompts en LangSmith. |
+| [Metadatos de ejecución](./EjemplosGraficos/Metadatos_LangFuse.png) | Información contextual asociada a las trazas de Langfuse. |
+| [Anonimización en LangSmith](./EjemplosGraficos/Masking_LangSmith.png) | Evidencia del enmascaramiento de correos en LangSmith. |
+| [Anonimización en Langfuse](./EjemplosGraficos/Masking_LangFuse.png) | Evidencia del enmascaramiento de correos en Langfuse. |
+| [Fallo controlado](./EjemplosGraficos/Prueba_fallo.py.png) | Ejecución de la prueba con un error simulado de herramienta. |
+| [Retraso controlado](./EjemplosGraficos/Prueba_retraso.png) | Ejecución de la prueba con latencia artificial. |
 
-Las capturas del proceso se guardan en [`EjemplosGraficos/`](./EjemplosGraficos/). Se recomienda incluir evidencias de:
-
-1. Trazas del grafo en LangSmith y Langfuse.
-2. Versiones V1 y V2 en los gestores de prompts.
-3. Evaluaciones, tokens, latencia y costes.
-4. Fallo controlado y retraso de herramienta.
-5. Anonimización del correo ficticio.
-
-Para **mostrar capturas dentro del README**, usar sus nombres reales, por ejemplo:
-
-```markdown
-![Trazas del agente en LangSmith](EjemplosGraficos/NOMBRE_REAL_DE_LA_CAPTURA.png)
-```
-
-> Sustituir `NOMBRE_REAL_DE_LA_CAPTURA.png` por un archivo existente. Revisar las imágenes antes de publicarlas para evitar exponer credenciales o datos personales.
+Las capturas complementan las métricas y los resultados descritos en este documento. La disponibilidad de trazas interactivas en las plataformas depende de los permisos de acceso a cada proyecto.
 
 ## Lectura de las trazas
 
