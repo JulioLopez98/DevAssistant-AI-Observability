@@ -1,0 +1,10 @@
+# Dependencias principales de DevAssistant AI
+# Versiones sin fijar: instalar y comprobar con el entorno del proyecto.
+python-dotenv
+langchain-core
+langchain-openai
+langgraph
+langgraph-checkpoint-sqlite
+langsmith
+langfuse
+requests

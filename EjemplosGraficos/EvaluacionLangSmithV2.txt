@@ -1,0 +1,202 @@
+(.venv) PS C:\Users\Propietario\Desktop\Julio\MasterAIEngineer\Clases\Clase6 -LangFuse + LangSmith\Proyecto6_Observability> python evaluacion.py
+Prompt cargado: langsmith-0b6de0a2
+
+PREGUNTAS DE EVALUACIÓN
+
+1. ¿Qué es LangGraph y para qué sirve?
+2. Consulta en PyPI la versión actual de FastAPI.
+3. Consulta en PyPI la versión actual de LangChain.
+4. Busca documentación sobre cómo crear un StateGraph con LangGraph.
+5. ¿Qué diferencias hay entre LangChain y LangGraph?
+6. Consulta en PyPI las versiones de FastAPI y LangGraph.
+7. ¿Qué es un grafo de estados? Explícalo con un ejemplo sencillo.
+8. ¿Qué versión de Python necesita FastAPI actualmente?
+9. ¿Qué ocurre si una herramienta no devuelve resultados?
+10. ¿Qué ventajas tiene utilizar herramientas en un agente de IA?
+
+Total: 10 preguntas
+
+=======================================================
+PRUEBA 1/10
+=======================================================
+
+Pregunta: ¿Qué es LangGraph y para qué sirve?
+Respuesta: LangGraph es una herramienta o biblioteca relacionada con el procesamiento de lenguaje natural (NLP) y la construcción de grafos semánticos o de conocimiento a partir de texto. Su propósito principal es representar información textual en forma de grafos, donde los nodos pueden ser entidades, conceptos o palabras, y las aristas representan relaciones entre ellos.
+
+Sirve para:
+
+1. Visualizar y analizar relaciones semánticas en textos.
+2. Mejorar tareas de NLP como la extracción de información, la respuesta a preguntas o la generación de conocimiento.
+3. Facilitar la integración de datos textuales con bases de conocimiento estructuradas.
+
+Si quieres, puedo buscar información más específica o actualizada sobre LangGraph, por ejemplo, si es una biblioteca de Python, su versión, documentación o casos de uso. ¿Quieres que lo haga?
+Latencia: 3.43 segundos
+Herramientas utilizadas: 0
+Errores: []
+
+=======================================================
+PRUEBA 2/10
+=======================================================
+
+🔧 TOOL CALL: consultar_paquete({'nombre': 'fastapi'})
+
+Pregunta: Consulta en PyPI la versión actual de FastAPI.
+Respuesta: La versión actual de FastAPI en PyPI es la 0.143.1. Requiere Python 3.10 o superior. ¿Quieres que te ayude con algo más sobre FastAPI?
+Latencia: 2.55 segundos
+Herramientas utilizadas: 1
+Errores: []
+
+=======================================================
+PRUEBA 3/10
+=======================================================
+
+🔧 TOOL CALL: consultar_paquete({'nombre': 'langchain'})
+
+Pregunta: Consulta en PyPI la versión actual de LangChain.
+Respuesta: La versión actual de LangChain en PyPI es la 1.4.6. Requiere Python en versión 3.10.0 o superior, pero menor que 4.0.0. ¿Quieres que te ayude con algo más sobre LangChain?
+Latencia: 2.32 segundos
+Herramientas utilizadas: 1
+Errores: []
+
+=======================================================
+PRUEBA 4/10
+=======================================================
+
+🔧 TOOL CALL: buscar_documentacion({'consulta': 'crear StateGraph con LangGraph'})
+
+Pregunta: Busca documentación sobre cómo crear un StateGraph con LangGraph.
+Respuesta: No he encontrado documentación específica ni preguntas técnicas sobre cómo crear un StateGraph con LangGraph en las fuentes consultadas.
+
+Si quieres, puedo ayudarte con una explicación general sobre cómo suelen implementarse los StateGraph en librerías de grafos o ayudarte a buscar documentación oficial o ejemplos en repositorios relacionados. ¿Quieres que haga eso?
+Latencia: 2.2 segundos
+Herramientas utilizadas: 1
+Errores: []
+
+=======================================================
+PRUEBA 5/10
+=======================================================
+
+Pregunta: ¿Qué diferencias hay entre LangChain y LangGraph?
+Respuesta: LangChain y LangGraph son dos herramientas relacionadas con el desarrollo de aplicaciones basadas en modelos de lenguaje, pero tienen enfoques y propósitos diferentes. Aquí te resumo las diferencias principales:
+
+1. **LangChain**:
+   - Es una biblioteca para construir aplicaciones que integran modelos de lenguaje (LLMs) con otras fuentes de datos y herramientas.
+   - Facilita la creación de cadenas de procesamiento (chains) que combinan LLMs con lógica, memoria, agentes, y conectores a APIs o bases de datos.
+   - Está orientada a desarrolladores que quieren construir flujos complejos y personalizados con LLMs.
+   - Ejemplos de uso: chatbots avanzados, asistentes con acceso a datos externos, automatización de tareas con LLMs.
+
+2. **LangGraph**:
+   - Es una herramienta o framework que permite construir y visualizar flujos de trabajo o pipelines para modelos de lenguaje usando una interfaz gráfica o basada en nodos.
+   - Se enfoca en la representación visual y modular de los procesos que involucran LLMs, facilitando la composición y depuración.
+   - Ideal para usuarios que prefieren diseñar sus aplicaciones con LLMs mediante diagramas o grafos en lugar de solo código.
+   - Puede ser complementario a LangChain, ayudando a diseñar y entender las cadenas o flujos.
+
+En resumen, LangChain es una biblioteca de código para construir aplicaciones con LLMs, mientras que LangGraph es una herramienta para diseñar y visualizar esos flujos de trabajo de forma gráfica o modular. LangGraph puede facilitar la creación y mantenimiento de proyectos que luego se implementan con LangChain u otras librerías similares.
+Latencia: 4.65 segundos
+Herramientas utilizadas: 0
+Errores: []
+
+=======================================================
+PRUEBA 6/10
+=======================================================
+
+🔧 TOOL CALL: consultar_paquete({'nombre': 'fastapi'})
+
+🔧 TOOL CALL: consultar_paquete({'nombre': 'langgraph'})
+
+Pregunta: Consulta en PyPI las versiones de FastAPI y LangGraph.
+Respuesta: Las versiones actuales en PyPI son:
+
+- FastAPI: versión 0.143.1, requiere Python >=3.10.
+- LangGraph: versión 1.2.15, requiere Python >=3.10.
+
+¿Quieres que te ayude con algo más sobre estos paquetes?
+Latencia: 2.25 segundos
+Herramientas utilizadas: 2
+Errores: []
+
+=======================================================
+PRUEBA 7/10
+=======================================================
+
+Pregunta: ¿Qué es un grafo de estados? Explícalo con un ejemplo sencillo.
+Respuesta: Un grafo de estados es una representación gráfica que muestra los diferentes estados en los que puede estar un sistema y las transiciones entre esos estados. Cada nodo del grafo representa un estado, y las aristas (flechas) representan las transiciones que ocurren debido a eventos o condiciones.
+
+Es muy usado en informática para modelar comportamientos de sistemas, máquinas de estados, protocolos, etc.
+
+Ejemplo sencillo:
+
+Imagina un semáforo con tres estados:
+- Verde
+- Amarillo
+- Rojo
+
+El grafo de estados sería:
+
+- Nodo "Verde" con una flecha hacia "Amarillo"
+- Nodo "Amarillo" con una flecha hacia "Rojo"
+- Nodo "Rojo" con una flecha hacia "Verde"
+
+Esto indica que el semáforo cambia de verde a amarillo, luego a rojo, y vuelve a verde, en un ciclo.
+
+Así, el grafo de estados ayuda a visualizar y entender cómo evoluciona el sistema según sus reglas. ¿Quieres que te ayude a crear un grafo de estados para algún caso específico?
+Latencia: 2.2 segundos
+Herramientas utilizadas: 0
+Errores: []
+
+=======================================================
+PRUEBA 8/10
+=======================================================
+
+🔧 TOOL CALL: consultar_paquete({'nombre': 'fastapi'})
+
+Pregunta: ¿Qué versión de Python necesita FastAPI actualmente?
+Respuesta: La versión actual de FastAPI es la 0.143.1 y requiere Python 3.10 o superior.
+Latencia: 2.39 segundos
+Herramientas utilizadas: 1
+Errores: []
+
+=======================================================
+PRUEBA 9/10
+=======================================================
+
+Pregunta: ¿Qué ocurre si una herramienta no devuelve resultados?
+Respuesta: Si una herramienta no devuelve resultados, significa que no ha podido encontrar información relevante para la consulta realizada. En ese caso:
+
+- Te informaré claramente que no se han encontrado datos o que la herramienta no pudo obtener resultados.
+- Explicaré qué tipo de información no he podido comprobar o proporcionar.
+- No inventaré ni asumiré datos que no estén verificados.
+- Intentaré ayudarte con conocimientos generales o alternativas si es posible.
+
+Así garantizo que la información que recibes es fiable y transparente.
+Latencia: 1.24 segundos
+Herramientas utilizadas: 0
+Errores: []
+
+=======================================================
+PRUEBA 10/10
+=======================================================
+
+Pregunta: ¿Qué ventajas tiene utilizar herramientas en un agente de IA?
+Respuesta: Utilizar herramientas en un agente de IA ofrece varias ventajas importantes:
+
+1. **Acceso a información actualizada**: Las herramientas permiten al agente consultar datos en tiempo real o recientes, superando la limitación de conocimiento estático.
+
+2. **Especialización funcional**: Pueden integrar funcionalidades específicas (como búsqueda en bases de datos, APIs externas, cálculos complejos) que el modelo base no realiza por sí mismo.
+
+3. **Mejora en la precisión**: Al apoyarse en fuentes confiables o sistemas especializados, el agente puede ofrecer respuestas más exactas y verificables.
+
+4. **Automatización de tareas complejas**: Facilitan la ejecución de procesos que requieren múltiples pasos o interacción con sistemas externos, aumentando la eficiencia.
+
+5. **Flexibilidad y escalabilidad**: Permiten ampliar las capacidades del agente sin necesidad de reentrenar el modelo, simplemente añadiendo o actualizando herramientas.
+
+En resumen, las herramientas potencian la utilidad, precisión y adaptabilidad de un agente de IA. ¿Quieres que te explique ejemplos concretos o tipos de herramientas comunes?
+Latencia: 2.55 segundos
+Herramientas utilizadas: 0
+Errores: []
+
+=======================================================
+EVALUACIÓN FINALIZADA
+Prompt evaluado: langsmith-0b6de0a2
+Total de preguntas: 10
+=======================================================
